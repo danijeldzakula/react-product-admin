@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es5",
+    "lib": ["ESNext", "dom", "dom.iterable"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "useDefineForClassFields": true,
+    "allowImportingTsExtensions": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "types": ["node"],
+    "paths": {
+      "@/*": ["src/*"],
+      "public/*": ["public/*"]
+    },
+    "downlevelIteration": true
+  },
+  "include": [
+    "src/**/*",
+    "*",
+    "prettier.config.cjs",
+    ".eslintrc.cjs",
+    "**/*.ts",
+    "**/*.tsx",
+    "prettier.config.cjs",
+    ".eslintrc.cjs",
+    "vite.config.ts",
+    "src"
+  ],
+  "rules": {
+    "@typescript-eslint/no-namespace": "off",
+    "no-unused-declaration": false
+  },
+  "exclude": ["node_modules"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

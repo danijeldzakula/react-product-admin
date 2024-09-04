@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    scroll-padding: 0;
+    --radius: 5px;
+  }
+
+  html {
+    @apply overflow-y-scroll;
+  }
+
+  body {
+    @apply relative bg-white dark:bg-zinc-950;
+  }
+}
+
+@layer components {
+  .roles-list > div:not(:last-child) > .role-list-item {
+    @apply border-b border-neutral-200 dark:border-neutral-800;
+  }
+}
+
+@layer utilities {
+  .max-content {
+    height: max-content;
+  }
+}
